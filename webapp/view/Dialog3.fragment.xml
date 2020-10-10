@@ -1,0 +1,23 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" controllerName="com.sap.build.standard.covidSafePass.controller.Dialog3" xmlns="sap.m">
+	<Dialog horizontalScrolling="true" showHeader="true" state="None" stretch="false" title="Select" type="Standard" verticalScrolling="true">
+		<content>
+			<List width="100%">
+				<items>
+					<ActionListItem text="Yes, but I don't deal with patients" visible="true"/>
+					<ActionListItem text="Yes, but I rarely deal with patients" visible="true"/>
+					<ActionListItem text="Yes, I sometimes deal with patients" visible="true"/>
+					<ActionListItem text="Yes, I often deal with patients" visible="true"/>
+					<ActionListItem text="No" visible="true"/>
+				</items>
+			</List>
+		</content>
+		<beginButton/>
+		<buttons>
+			<Button text="OK" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+			<Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+		</buttons>
+		<customHeader/>
+		<endButton/>
+		<subHeader/>
+	</Dialog>
+</core:FragmentDefinition>

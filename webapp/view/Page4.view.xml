@@ -1,0 +1,45 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.covidSafePass.controller.Page4" xmlns="sap.m"
+	xmlns:layout="sap.ui.commons.layout">
+	<Page showHeader="true" title="Disclosure" showFooter="false" showNavButton="true" enableScrolling="false"
+		navButtonPress="_onPageNavButtonPress">
+		<content>
+			<layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+				<layout:positions>
+					<layout:PositionContainer left="0px" top="62px">
+						<layout:control>
+							<Image src="/webapp/resources/9.png" height="252.08px" width="768px" visible="true" densityAware="false"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="180px" top="332px">
+						<layout:control>
+							<SegmentedButton width="auto" enabled="true" visible="true">
+								<items>
+									<SegmentedButtonItem icon="sap-icon://hint" text="Terms and Condition" width="auto" enabled="true"/>
+									<SegmentedButtonItem icon="sap-icon://hint" text="Privacy Policy" width="auto" enabled="true"/>
+								</items>
+							</SegmentedButton>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="290px" top="407px">
+						<layout:control>
+							<Button text="Continue" type="Accept" iconFirst="true" width="132.00000000px" enabled="true" visible="true" iconDensityAware="false"
+								press="_onButtonPress"/>
+						</layout:control>
+					</layout:PositionContainer>
+				</layout:positions>
+			</layout:AbsoluteLayout>
+		</content>
+		<footer>
+			<OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+				<content>
+					<ToolbarSpacer width=""/>
+					<Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+					<Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+				</content>
+			</OverflowToolbar>
+		</footer>
+		<headerContent/>
+		<subHeader/>
+		<customHeader/>
+	</Page>
+</mvc:View>

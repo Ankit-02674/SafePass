@@ -1,0 +1,127 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.covidSafePass.controller.Page8" xmlns="sap.m"
+	xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.commons.layout">
+	<Page showHeader="true" title="Assessment (Occupation)" showFooter="false" showNavButton="true" enableScrolling="false"
+		navButtonPress="_onPageNavButtonPress">
+		<content>
+			<layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+				<layout:positions>
+					<layout:PositionContainer left="0px" top="15px">
+						<layout:control>
+							<form:Form width="100%" editable="true" visible="true">
+								<form:title/>
+								<form:formContainers/>
+								<form:layout>
+									<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="2" labelSpanM="2" labelSpanS="12"/>
+								</form:layout>
+							</form:Form>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="0px" top="13px">
+						<layout:control>
+							<form:Form width="100%" editable="true" visible="true">
+								<form:title>
+									<core:Title text="1. Do you work in the medical of first responder field dealing directly with patients?" level="Auto"/>
+								</form:title>
+								<form:formContainers>
+									<form:FormContainer visible="true">
+										<form:formElements/>
+										<form:title/>
+									</form:FormContainer>
+								</form:formContainers>
+								<form:layout>
+									<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+								</form:layout>
+							</form:Form>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="11px" top="78px">
+						<layout:control>
+							<Select width="750px" maxWidth="100%" selectedKey="Select" icon="sap-icon://multi-select" enabled="true" type="Default" textAlign="Initial"
+								valueState="Success" forceSelection="false" change="_onSelectChange">
+								<items>
+									<core:Item key="Key" text="Select" enabled="true"/>
+									<core:Item key="Key" text="Yes, but I rarely deal with patients" enabled="true"/>
+									<core:Item key="Key" text="Yes, but I don't deal with patients" enabled="true"/>
+									<core:Item key="Key" text="Yes, I often deal with patients" enabled="true"/>
+									<core:Item key="Key" text="Yes, I sometimes deal with patients" enabled="true"/>
+									<core:Item key="Key" text="No" enabled="true"/>
+								</items>
+							</Select>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="3px" top="165px">
+						<layout:control>
+							<form:Form width="100%" editable="true" visible="true">
+								<form:title>
+									<core:Title text="2. In the last 14 days have you worked remote or onsite for your job?" level="Auto"/>
+								</form:title>
+								<form:formContainers/>
+								<form:layout>
+									<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+								</form:layout>
+							</form:Form>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="7px" top="228px">
+						<layout:control>
+							<Select width="748px" maxWidth="100%" selectedKey="Select" icon="sap-icon://multi-select" enabled="true" type="Default" textAlign="Begin"
+								valueState="Success" forceSelection="false" class="sapUiTinyMargin" change="_onSelectChange1">
+								<items>
+									<core:Item key="Key" text="Select" enabled="true"/>
+									<core:Item key="Key" text="Fully Remote" enabled="true"/>
+									<core:Item key="Key" text="Fully Onsite" enabled="true"/>
+									<core:Item key="Key" text="Mixed" enabled="true"/>
+								</items>
+							</Select>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="0px" top="311px">
+						<layout:control>
+							<form:Form width="100%" editable="true" visible="true">
+								<form:title>
+									<core:Title text="3. In the last 14 days have you physically worked with customers (not including patients)?" level="Auto"/>
+								</form:title>
+								<form:formContainers/>
+								<form:layout>
+									<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+								</form:layout>
+							</form:Form>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="17px" top="375px">
+						<layout:control>
+							<Select width="743.00000000px" maxWidth="100%" selectedKey="Never" icon="sap-icon://multi-select" enabled="true" type="Default"
+								textAlign="Initial" valueState="Success" forceSelection="false" change="_onSelectChange2">
+								<items>
+									<core:Item key="Key" text="Select" enabled="true"/>
+									<core:Item key="Key" text="Never" enabled="true"/>
+									<core:Item key="Key" text="Rarely" enabled="true"/>
+									<core:Item key="Key" text="Sometimes" enabled="true"/>
+									<core:Item key="Key" text="Often" enabled="true"/>
+								</items>
+							</Select>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="282px" top="493px">
+						<layout:control>
+							<Button text="Next Page" type="Default" iconFirst="true" width="105px" enabled="true" visible="true" iconDensityAware="false"
+								press="_onButtonPress"/>
+						</layout:control>
+					</layout:PositionContainer>
+				</layout:positions>
+			</layout:AbsoluteLayout>
+		</content>
+		<footer>
+			<OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+				<content>
+					<ToolbarSpacer width=""/>
+					<Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+					<Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+				</content>
+			</OverflowToolbar>
+		</footer>
+		<headerContent/>
+		<subHeader/>
+		<customHeader/>
+	</Page>
+</mvc:View>

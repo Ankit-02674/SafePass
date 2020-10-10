@@ -1,0 +1,56 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.covidSafePass.controller.Page2" xmlns="sap.m"
+	xmlns:layout="sap.ui.commons.layout">
+	<Page showHeader="true" title="COVID SafePass" showFooter="false" showNavButton="true" enableScrolling="false"
+		navButtonPress="_onPageNavButtonPress">
+		<content>
+			<layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+				<layout:positions>
+					<layout:PositionContainer left="109px" top="108px">
+						<layout:control>
+							<Text text="" width="576px" maxLines="100" wrapping="false" textAlign="Center" textDirection="Inherit" visible="true"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="149px" top="0px">
+						<layout:control>
+							<Title text="" titleStyle="H1" width="500px" textAlign="Center" visible="true" wrapping="false"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="188px" top="410px">
+						<layout:control>
+							<CheckBox text="I Pledge to help to stop spread of COVID-19" selected="true" editable="true" enabled="true" visible="true"
+								width="349.00000000px" textDirection="Inherit" wrapping="false" useEntireWidth="true"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="174px" top="121px">
+						<layout:control>
+							<Text text="" width="399.45001220703125px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="0px" top="0px">
+						<layout:control>
+							<Image src="/webapp/resources/7.png" height="364.8px" width="768px" visible="true" densityAware="false"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="266px" top="507px">
+						<layout:control>
+							<Button text="Continue" type="Default" iconFirst="true" width="169px" enabled="true" visible="true" iconDensityAware="false"
+								press="_onButtonPress"/>
+						</layout:control>
+					</layout:PositionContainer>
+				</layout:positions>
+			</layout:AbsoluteLayout>
+		</content>
+		<footer>
+			<OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+				<content>
+					<ToolbarSpacer width=""/>
+					<Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+					<Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+				</content>
+			</OverflowToolbar>
+		</footer>
+		<headerContent/>
+		<subHeader/>
+		<customHeader/>
+	</Page>
+</mvc:View>

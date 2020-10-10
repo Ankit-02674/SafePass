@@ -1,0 +1,62 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.covidSafePass.controller.Page6" xmlns="sap.m"
+	xmlns:core="sap.ui.core" xmlns:layout="sap.ui.commons.layout">
+	<Page showHeader="true" title="Sign In" showFooter="false" showNavButton="true" enableScrolling="false"
+		navButtonPress="_onPageNavButtonPress">
+		<content>
+			<layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+				<layout:positions>
+					<layout:PositionContainer left="220px" top="276px">
+						<layout:control>
+							<Text text="Email" width="294px" maxLines="1" wrapping="false" textAlign="Center" textDirection="Inherit" visible="true"
+								class="sapUiTinyMargin"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="250px" top="317px">
+						<layout:control>
+							<TextArea rows="1" cols="30" maxLength="0" wrapping="None" enabled="true" required="false" valueStateText="Invalid entry" visible="true"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="260px" top="413px">
+						<layout:control>
+							<TextArea rows="1" cols="30" maxLength="0" wrapping="None" enabled="true" required="false" valueStateText="Invalid entry" visible="true"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="270px" top="380px">
+						<layout:control>
+							<Text text="Password" width="212px" maxLines="1" wrapping="false" textAlign="Center" textDirection="Inherit" visible="true"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="261px" top="495px">
+						<layout:control>
+							<SegmentedButton width="auto" enabled="true" visible="true">
+								<items>
+									<SegmentedButtonItem text="Login" width="133.00000000px" enabled="true"/>
+									<SegmentedButtonItem text="Cancel" width="108px" enabled="true"/>
+								</items>
+							</SegmentedButton>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="4px" top="4px">
+						<layout:control>
+							<Image src="/webapp/resources/SafePass_CNNPH.jpg" height="273.3125px" width="765px" visible="true" densityAware="false"/>
+						</layout:control>
+					</layout:PositionContainer>
+				</layout:positions>
+			</layout:AbsoluteLayout>
+		</content>
+		<footer>
+			<OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+				<content>
+					<ToolbarSpacer width=""/>
+					<Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+					<Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+				</content>
+			</OverflowToolbar>
+		</footer>
+		<headerContent>
+			<core:Icon src="sap-icon://sys-help" size="48px" height="48px" width="48px" visible="true"/>
+		</headerContent>
+		<subHeader/>
+		<customHeader/>
+	</Page>
+</mvc:View>

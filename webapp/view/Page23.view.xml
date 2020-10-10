@@ -1,0 +1,57 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.covidSafePass.controller.Page23" xmlns="sap.m"
+	xmlns:layout="sap.ui.commons.layout">
+	<Page showHeader="true" title="SafePass" showFooter="true" showNavButton="false" enableScrolling="false">
+		<content>
+			<layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+				<layout:positions>
+					<layout:PositionContainer left="0px" top="0px">
+						<layout:control>
+							<Image src="/webapp/resources/MT43072__1_.png" height="384px" width="768px" visible="true" densityAware="false"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="169px" top="407px">
+						<layout:control>
+							<SlideTile displayTime="5000" transitionTime="500">
+								<tiles>
+									<GenericTile header="Total Number of Cases in Australia" subheader="27174" frameType="TwoThirds">
+										<tileContent>
+											<TileContent footer="August 21, 2016" unit="USD">
+												<content>
+													<NewsContent contentText="Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe" subheader="Today, SAP News"/>
+												</content>
+											</TileContent>
+										</tileContent>
+									</GenericTile>
+									<GenericTile header="WhatsApp logo Australian Government WhatsApp channel for COVID-19" subheader="Join with WhatsApp" frameType="TwoByOne"
+										backgroundImage="/webapp/resources/safe-pass.png" class="sapUiTinyMargin">
+										<tileContent>
+											<TileContent footer="October 07, 2020" unit="NSW">
+												<content>
+													<NewsContent contentText="Coronavirus (COVID-19) current situation and case numbers" subheader="Today, Australia Health Dept"/>
+												</content>
+											</TileContent>
+										</tileContent>
+									</GenericTile>
+								</tiles>
+							</SlideTile>
+						</layout:control>
+					</layout:PositionContainer>
+				</layout:positions>
+			</layout:AbsoluteLayout>
+		</content>
+		<footer>
+			<OverflowToolbar width="763px" height="46px" design="Auto" enabled="true" visible="true">
+				<content>
+					<ToolbarSpacer width=""/>
+					<Button text="Start" type="Emphasized" iconFirst="true" width="150px" enabled="true" visible="true" iconDensityAware="false"
+						press="_onButtonPress"/>
+					<Button text="Cancel" type="Default" iconFirst="true" width="101px" enabled="true" visible="true" iconDensityAware="false"
+						press="_onButtonPress1"/>
+				</content>
+			</OverflowToolbar>
+		</footer>
+		<headerContent/>
+		<subHeader/>
+		<customHeader/>
+	</Page>
+</mvc:View>

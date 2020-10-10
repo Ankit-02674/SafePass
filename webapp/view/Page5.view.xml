@@ -1,0 +1,46 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.covidSafePass.controller.Page5" xmlns="sap.m"
+	xmlns:layout="sap.ui.commons.layout">
+	<Page showHeader="true" title="Honesty Please" showFooter="false" showNavButton="true" enableScrolling="false"
+		navButtonPress="_onPageNavButtonPress">
+		<content>
+			<layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+				<layout:positions>
+					<layout:PositionContainer left="204px" top="0px">
+						<layout:control>
+							<Image src="/webapp/resources/WhatsApp_Image_2020-10-03_at_8.45.11_PM.jpeg" height="251px" width="300px" visible="true" densityAware="false"
+								class="sapUiSmallMargin"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="0px" top="281px">
+						<layout:control>
+							<Image src="/webapp/resources/10.png" height="150.13px" width="768px" visible="true" densityAware="false"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="153px" top="416px">
+						<layout:control>
+							<CheckBox text="Yes I will be honest with my Answers" selected="true" editable="true" enabled="true" visible="true" width="405.00000000px"
+								textDirection="Inherit" wrapping="false" useEntireWidth="true" class="sapUiSmallMargin"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="170px" top="508px">
+						<layout:control>
+							<Button text="Start my Assessment" type="Default" iconFirst="true" width="343px" enabled="true" visible="true" iconDensityAware="false"/>
+						</layout:control>
+					</layout:PositionContainer>
+				</layout:positions>
+			</layout:AbsoluteLayout>
+		</content>
+		<footer>
+			<OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+				<content>
+					<ToolbarSpacer width=""/>
+					<Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+					<Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+				</content>
+			</OverflowToolbar>
+		</footer>
+		<headerContent/>
+		<subHeader/>
+		<customHeader/>
+	</Page>
+</mvc:View>

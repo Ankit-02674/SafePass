@@ -1,0 +1,10 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" controllerName="com.sap.build.standard.covidSafePass.controller.ActionSheet1"
+	xmlns="sap.m">
+	<ActionSheet showCancelButton="true" cancelButtonText="Cancel" title="">
+		<buttons>
+			<Button text="Accept" icon="sap-icon://accept" width="auto" enabled="true"/>
+			<Button text="Decline" icon="sap-icon://decline" width="auto" enabled="true"/>
+			<Button text="Forward" icon="sap-icon://forward" width="auto" enabled="true"/>
+		</buttons>
+	</ActionSheet>
+</core:FragmentDefinition>

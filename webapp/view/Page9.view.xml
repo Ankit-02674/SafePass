@@ -1,0 +1,80 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.covidSafePass.controller.Page9" xmlns="sap.m"
+	xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.commons.layout">
+	<Page showHeader="true" title="Assessment (Travel)" showFooter="false" showNavButton="true" enableScrolling="false"
+		navButtonPress="_onPageNavButtonPress">
+		<content>
+			<layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+				<layout:positions>
+					<layout:PositionContainer left="0px" top="35px">
+						<layout:control>
+							<form:Form width="100%" editable="true" visible="true">
+								<form:title>
+									<core:Title text="4. In the last 14 days have you travelled outside Australia?" level="Auto"/>
+								</form:title>
+								<form:formContainers/>
+								<form:layout>
+									<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+								</form:layout>
+							</form:Form>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="10px" top="103px">
+						<layout:control>
+							<Select width="745px" maxWidth="100%" selectedKey="No" icon="sap-icon://multi-select" enabled="true" type="Default" textAlign="Initial"
+								valueState="None" forceSelection="false" class="sapUiTinyMargin" change="_onSelectChange">
+								<items>
+									<core:Item key="Key" text="Select" enabled="true"/>
+									<core:Item key="Key" text="Yes" enabled="true"/>
+									<core:Item key="Key" text="No" enabled="true"/>
+								</items>
+							</Select>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="0px" top="202px">
+						<layout:control>
+							<form:Form width="100%" editable="true" visible="true">
+								<form:title>
+									<core:Title text="5. In the last 14 days have you travelled outside the state you currently residing?" level="Auto"/>
+								</form:title>
+								<form:formContainers/>
+								<form:layout>
+									<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+								</form:layout>
+							</form:Form>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="4px" top="266px">
+						<layout:control>
+							<Select width="740px" maxWidth="100%" selectedKey="No" icon="sap-icon://multi-select" enabled="true" type="Default" textAlign="Initial"
+								valueState="Success" forceSelection="false" class="sapUiTinyMargin" change="_onSelectChange1">
+								<items>
+									<core:Item key="Key" text="Select" enabled="true"/>
+									<core:Item key="Key" text="Yes" enabled="true"/>
+									<core:Item key="Key" text="No" enabled="true"/>
+								</items>
+							</Select>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="249px" top="379px">
+						<layout:control>
+							<Button text="Next Page" type="Default" iconFirst="true" width="125.00000000px" enabled="true" visible="true" iconDensityAware="false"
+								press="_onButtonPress"/>
+						</layout:control>
+					</layout:PositionContainer>
+				</layout:positions>
+			</layout:AbsoluteLayout>
+		</content>
+		<footer>
+			<OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+				<content>
+					<ToolbarSpacer width=""/>
+					<Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+					<Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+				</content>
+			</OverflowToolbar>
+		</footer>
+		<headerContent/>
+		<subHeader/>
+		<customHeader/>
+	</Page>
+</mvc:View>

@@ -1,0 +1,64 @@
+{
+	"dataBinding": {
+		"/webapp/view/Page23.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/Page2.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/Page3.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/Page4.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/Page5.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/Page6.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/Page7.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/Page8.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/Page9.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/Page10.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/Page11.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/Page12.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/Page13.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/Page24.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/Dialog4.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/Dialog3.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/Dialog2.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/Dialog1.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/ActionSheet1.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/QuickView1.view.xml": {
+			"entitySet": ""
+		}
+	}
+}

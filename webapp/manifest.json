@@ -1,0 +1,295 @@
+{
+	"_version": "1.8.0",
+	"sap.app": {
+		"_version": "1.3.0",
+		"id": "com.sap.build.standard.covidSafePass",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.2.2"
+		},
+		"dataSources": {
+			"local": {
+				"uri": "/here/goes/your/serviceUrl/local/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/metadata.xml"
+				}
+			}
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"ach": "ach",
+		"resources": "resources.json",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.32.0"
+		}
+	},
+	"sap.ui": {
+		"_version": "1.3.0",
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"_version": "1.3.0",
+		"rootView": {
+			"viewName": "generated.app.view.Page24",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.50.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/i18n.properties"
+			},
+			"": {
+				"dataSource": "local",
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"loadMetadataAsync": false,
+					"json": true,
+					"bJSON": true,
+					"defaultBindingMode": "TwoWay",
+					"defaultCountMode": "Inline",
+					"useBatch": true,
+					"refreshAfterChange": false,
+					"disableHeadRequestForToken": true
+				}
+			}
+		},
+		"resources": {
+			"css": []
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "com.sap.build.standard.covidSafePass.view",
+				"controlId": "App",
+				"clearTarget": false,
+				"controlAggregation": "pages",
+				"bypassed": {
+					"target": [
+						"Page23"
+					]
+				}
+			},
+			"targets": {
+				"Page23": {
+					"controlAggregation": "pages",
+					"viewName": "Page23",
+					"viewId": "Page23",
+					"viewLevel": 1,
+					"transition": "slide"
+				},
+				"Page2": {
+					"controlAggregation": "pages",
+					"viewName": "Page2",
+					"viewId": "Page2",
+					"viewLevel": 2,
+					"transition": "slide"
+				},
+				"Page3": {
+					"controlAggregation": "pages",
+					"viewName": "Page3",
+					"viewId": "Page3",
+					"viewLevel": 3,
+					"transition": "slide"
+				},
+				"Page4": {
+					"controlAggregation": "pages",
+					"viewName": "Page4",
+					"viewId": "Page4",
+					"viewLevel": 13,
+					"transition": "slide"
+				},
+				"Page5": {
+					"controlAggregation": "pages",
+					"viewName": "Page5",
+					"viewId": "Page5",
+					"viewLevel": 14,
+					"transition": "flip"
+				},
+				"Page6": {
+					"controlAggregation": "pages",
+					"viewName": "Page6",
+					"viewId": "Page6",
+					"viewLevel": 12,
+					"transition": "slide"
+				},
+				"Page7": {
+					"controlAggregation": "pages",
+					"viewName": "Page7",
+					"viewId": "Page7",
+					"viewLevel": 11,
+					"transition": "slide"
+				},
+				"Page8": {
+					"controlAggregation": "pages",
+					"viewName": "Page8",
+					"viewId": "Page8",
+					"viewLevel": 4,
+					"transition": "slide"
+				},
+				"Page9": {
+					"controlAggregation": "pages",
+					"viewName": "Page9",
+					"viewId": "Page9",
+					"viewLevel": 5,
+					"transition": "slide"
+				},
+				"Page10": {
+					"controlAggregation": "pages",
+					"viewName": "Page10",
+					"viewId": "Page10",
+					"viewLevel": 6,
+					"transition": "slide"
+				},
+				"Page11": {
+					"controlAggregation": "pages",
+					"viewName": "Page11",
+					"viewId": "Page11",
+					"viewLevel": 7,
+					"transition": "slide"
+				},
+				"Page12": {
+					"controlAggregation": "pages",
+					"viewName": "Page12",
+					"viewId": "Page12",
+					"viewLevel": 8,
+					"transition": "slide"
+				},
+				"Page13": {
+					"controlAggregation": "pages",
+					"viewName": "Page13",
+					"viewId": "Page13",
+					"viewLevel": 9,
+					"transition": "slide"
+				},
+				"Page24": {
+					"controlAggregation": "pages",
+					"viewName": "Page24",
+					"viewId": "Page24",
+					"viewLevel": 10,
+					"transition": "slide"
+				}
+			},
+			"routes": [{
+				"pattern": "Page23/:context:",
+				"name": "Page23",
+				"target": [
+					"Page23"
+				]
+			}, {
+				"pattern": "",
+				"name": "default",
+				"target": [
+					"Page23"
+				]
+			}, {
+				"pattern": "Page2/:context:",
+				"name": "Page2",
+				"target": [
+					"Page2"
+				]
+			}, {
+				"pattern": "Page3/:context:",
+				"name": "Page3",
+				"target": [
+					"Page3"
+				]
+			}, {
+				"pattern": "Page4/:context:",
+				"name": "Page4",
+				"target": [
+					"Page4"
+				]
+			}, {
+				"pattern": "Page5/:context:",
+				"name": "Page5",
+				"target": [
+					"Page5"
+				]
+			}, {
+				"pattern": "Page6/:context:",
+				"name": "Page6",
+				"target": [
+					"Page6"
+				]
+			}, {
+				"pattern": "Page7/:context:",
+				"name": "Page7",
+				"target": [
+					"Page7"
+				]
+			}, {
+				"pattern": "Page8/:context:",
+				"name": "Page8",
+				"target": [
+					"Page8"
+				]
+			}, {
+				"pattern": "Page9/:context:",
+				"name": "Page9",
+				"target": [
+					"Page9"
+				]
+			}, {
+				"pattern": "Page10/:context:",
+				"name": "Page10",
+				"target": [
+					"Page10"
+				]
+			}, {
+				"pattern": "Page11/:context:",
+				"name": "Page11",
+				"target": [
+					"Page11"
+				]
+			}, {
+				"pattern": "Page12/:context:",
+				"name": "Page12",
+				"target": [
+					"Page12"
+				]
+			}, {
+				"pattern": "Page13/:context:",
+				"name": "Page13",
+				"target": [
+					"Page13"
+				]
+			}, {
+				"pattern": "Page24/:context:",
+				"name": "Page24",
+				"target": [
+					"Page24"
+				]
+			}]
+		}
+	}
+}

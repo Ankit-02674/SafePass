@@ -1,0 +1,64 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.covidSafePass.controller.Page3" xmlns="sap.m"
+	xmlns:layout="sap.ui.commons.layout">
+	<Page showHeader="true" title="Be A Part of Solution" showFooter="false" showNavButton="true" enableScrolling="false"
+		navButtonPress="_onPageNavButtonPress">
+		<content>
+			<layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+				<layout:positions>
+					<layout:PositionContainer left="144px" top="44px">
+						<layout:control>
+							<Text text="SafePass helps you evaluate your level of COVID-19" width="531.00000000px" maxLines="1" wrapping="false" textAlign="Begin"
+								textDirection="Inherit" visible="true"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="248px" top="105px">
+						<layout:control>
+							<Text text="Don’t you have Code?" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="268px" top="149px">
+						<layout:control>
+							<Button text="Get Started" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+								press="_onButtonPress"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="239px" top="219px">
+						<layout:control>
+							<Text text="Have a code to enter?" width="237px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="219px" top="280px">
+						<layout:control>
+							<Button text="Enter Organization Code" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+								press="_onButtonPress1"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="278px" top="375px">
+						<layout:control>
+							<Button text="Login" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+								press="_onButtonPress2"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="148px" top="71px">
+						<layout:control>
+							<Text text="risk, locate testing sites and securely stores test results." width="403.00000000px" maxLines="2" wrapping="false"
+								textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</layout:control>
+					</layout:PositionContainer>
+				</layout:positions>
+			</layout:AbsoluteLayout>
+		</content>
+		<footer>
+			<OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+				<content>
+					<ToolbarSpacer width=""/>
+					<Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+					<Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+				</content>
+			</OverflowToolbar>
+		</footer>
+		<headerContent/>
+		<subHeader/>
+		<customHeader/>
+	</Page>
+</mvc:View>

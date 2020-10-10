@@ -1,0 +1,104 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.covidSafePass.controller.Page24" xmlns="sap.m"
+	xmlns:layout="sap.ui.commons.layout">
+	<Page showHeader="true" title="Future Development" showFooter="true" showNavButton="true" enableScrolling="false"
+		navButtonPress="_onPageNavButtonPress">
+		<content>
+			<layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+				<layout:positions>
+					<layout:PositionContainer left="0px" top="19px">
+						<layout:control>
+							<IconTabBar expandable="false" expanded="true" applyContentPadding="false" backgroundDesign="Solid" upperCase="false" visible="true"
+								selectedKey="Ok">
+								<items>
+									<IconTabFilter icon="sap-icon://hint" iconColor="Positive" text="Ok" count="" design="Vertical" showAll="false" textDirection="Inherit"
+										enabled="true" visible="true" iconDensityAware="false">
+										<content>
+											<Table width="auto" noDataText="No data" mode="None" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true"
+												class="sapUiResponsiveMargin">
+												<infoToolbar/>
+												<headerToolbar/>
+												<columns>
+													<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+														<header>
+															<Text text="Supplier" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+														</header>
+														<footer/>
+													</Column>
+													<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" demandPopin="false" popinDisplay="Inline" mergeDuplicates="false">
+														<header>
+															<Text text="By this at affordable price" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+														</header>
+														<footer/>
+													</Column>
+													<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+														<header>
+															<Text text="Price" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+														</header>
+														<footer/>
+													</Column>
+												</columns>
+												<items>
+													<ColumnListItem type="Active">
+														<cells>
+															<Text text="Chemist Warehouse" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+															<ObjectIdentifier title="Hand Sanitizer" text="HAND001" titleActive="false" visible="true"/>
+															<ObjectNumber number="15.00" unit="AUD" emphasized="true" state="None"/>
+														</cells>
+													</ColumnListItem>
+													<ColumnListItem type="Active">
+														<cells>
+															<Text text="Supplier Name" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+															<ObjectIdentifier title="Face Mask" text="FACE001" titleActive="false" visible="true"/>
+															<ObjectNumber number="50.00" unit="AUD" emphasized="true" state="None"/>
+														</cells>
+													</ColumnListItem>
+													<ColumnListItem type="Active">
+														<cells>
+															<Text text="Chemist Warehouse" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+															<ObjectIdentifier title="Hand Wash" text="HAND002" titleActive="false" visible="true"/>
+															<ObjectNumber number="25.00" unit="AUD" emphasized="true" state="None"/>
+														</cells>
+													</ColumnListItem>
+												</items>
+											</Table>
+										</content>
+									</IconTabFilter>
+									<IconTabSeparator icon="" iconDensityAware="false"/>
+									<IconTabFilter icon="sap-icon://attachment" iconColor="Neutral" text="" count="3" design="Vertical" showAll="false" textDirection="Inherit"
+										enabled="true" visible="true" iconDensityAware="false">
+										<content>
+											<Text text="Attachments go here ..." width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+										</content>
+									</IconTabFilter>
+									<IconTabSeparator icon="" iconDensityAware="false"/>
+									<IconTabFilter icon="sap-icon://notes" iconColor="Neutral" text="" count="3" design="Vertical" showAll="false" textDirection="Inherit"
+										enabled="true" visible="true" iconDensityAware="false">
+										<content>
+											<Text text="Notes go here ..." width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+										</content>
+									</IconTabFilter>
+								</items>
+								<content>
+									<Text text="Tab Bar Content goes here ..." width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"
+										visible="true"/>
+								</content>
+							</IconTabBar>
+						</layout:control>
+					</layout:PositionContainer>
+				</layout:positions>
+			</layout:AbsoluteLayout>
+		</content>
+		<footer>
+			<OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+				<content>
+					<ToolbarSpacer width=""/>
+					<Button text="Close" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+						press="_onButtonPress"/>
+				</content>
+			</OverflowToolbar>
+		</footer>
+		<headerContent/>
+		<subHeader/>
+		<customHeader/>
+	</Page>
+</mvc:View>

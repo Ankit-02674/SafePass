@@ -1,0 +1,45 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.covidSafePass.controller.Page13" xmlns="sap.m"
+	xmlns:chart="sap.chart" xmlns:data="sap.chart.data" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.commons.layout">
+	<Page showHeader="true" title="Statistics" showFooter="true" showNavButton="true" enableScrolling="false"
+		navButtonPress="_onPageNavButtonPress">
+		<content>
+			<layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+				<layout:positions>
+					<layout:PositionContainer left="0px" top="132px">
+						<layout:control>
+							<chart:Chart id="sap_m_Page_0-content-sap_chart_ColumnChart-1602035546619" width="100%" height="450px" visibleDimensions="__id"
+								visibleMeasures="mea0" vizProperties="{staticDataModel>/sap_m_Page_0-content-sap_chart_ColumnChart-1602035546619/vizProperties}"
+								chartType="column" selectionMode="Single" uiConfig="{}">
+								<chart:dimensions>
+									<data:Dimension name="__id" label="State" role="category" textProperty="dim0"/>
+								</chart:dimensions>
+								<chart:measures>
+									<data:Measure name="mea0" label="Number of SafePass Issued" role="axis2"/>
+								</chart:measures>
+							</chart:Chart>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="646px" top="12px">
+						<layout:control>
+							<core:Icon src="sap-icon://future" size="48px" height="48px" width="48px" visible="true" press="_onIconPress"/>
+						</layout:control>
+					</layout:PositionContainer>
+				</layout:positions>
+			</layout:AbsoluteLayout>
+		</content>
+		<footer>
+			<OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+				<content>
+					<ToolbarSpacer width=""/>
+					<Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+						press="_onButtonPress"/>
+					<Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+						press="_onButtonPress1"/>
+				</content>
+			</OverflowToolbar>
+		</footer>
+		<headerContent/>
+		<subHeader/>
+		<customHeader/>
+	</Page>
+</mvc:View>
